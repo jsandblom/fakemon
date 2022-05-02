@@ -5,11 +5,12 @@ interface SatPuls {
   sat: number
 }
 
-const p = defineProps<SatPuls>()
+const props = defineProps<{satpuls: SatPuls}>()
 
 </script>
 
 <template>
   <div>
+    <span>[{{ props.satpuls.sat }}]</span>
   </div>
 </template>
